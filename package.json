@@ -7,7 +7,7 @@
     "test": "check-node-version --package --print && ./node_modules/.bin/istanbul cover --root src --include-all-sources ./node_modules/.bin/_mocha -- -r ./tests/setup/before.js -R spec 'tests/**/*.test.js'"
   },
   "engines": {
-    "node": "6.10",
+    "node": ">= 4",
     "npm": ">= 5.7.1"
   },
   "repository": {
@@ -48,5 +48,8 @@
     "rewire": "3.0.2",
     "silvermine-serverless-utils": "git+https://github.com/silvermine/serverless-utils.git#910f1149af824fc8d0fa840878079c7d3df0f414",
     "sinon": "4.5.0"
+  },
+  "dependencies": {
+    "lodash": "4.x"
   }
 }

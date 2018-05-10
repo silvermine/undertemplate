@@ -35,10 +35,22 @@ The following are **NOT** supported:
    * `<% … %>`: JS evaluation
    * `<% print('Hello ' + epithet); %>`: JS evaluation with the `print` function
 
-NOTE: Since string interpolation is done differently from Underscore/Lodash the error
-messages thrown when a variable is not available (et cetera) will now differ from what you
-had before. If you were catching errors thrown when calling the template function and
-relying on the messages in those errors, your code will need to be updated.
+
+## A Couple Notes
+
+Templating in Underscore/Lodash was operating by building up a JS function as a string.
+This meant that if your template referred to a variable that did not exist, you would get
+a JS error thrown. In this library, however, undefined variables in the template will
+result in an empty string being placed in that location.
+
+We rely on Lodash to provide a number of convenience functions that would require
+polyfills to support a wide array of browsers. To help reduce bloat, we do two things:
+
+   1. Rely on a fairly loose version of Lodash: `4.x`, meaning that if you already have it
+      as a dependency, we'll use your version.
+   2. Only `require('lodash/foo')` for each `foo` function we need. This helps if you're
+      using UnderTemplate in a browserify-style environment since only the files from
+      Lodash that are actually needed will be included in your bundle.
 
 
 ## How do I contribute?
