@@ -33,11 +33,11 @@
   "homepage": "https://github.com/silvermine/undertemplate#readme",
   "devDependencies": {
     "@silvermine/chai-strictly-equal": "1.0.0",
+    "@silvermine/eslint-config": "1.5.0",
     "chai": "4.1.2",
     "check-node-version": "3.2.0",
     "coveralls": "3.0.0",
     "eslint": "4.19.1",
-    "eslint-config-silvermine": "1.4.0",
     "grunt": "1.0.3",
     "grunt-cli": "1.2.0",
     "grunt-eslint": "20.1.0",
