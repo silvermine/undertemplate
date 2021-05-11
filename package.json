@@ -4,7 +4,8 @@
   "description": "Replacement for _.template (underscore or lodash) without unsafe evals.",
   "main": "src/index.js",
   "scripts": {
-    "test": "check-node-version --package --print && ./node_modules/.bin/istanbul cover --root src --include-all-sources ./node_modules/.bin/_mocha -- -r ./tests/setup/before.js -R spec 'tests/**/*.test.js'"
+    "test": "check-node-version --package --print && ./node_modules/.bin/istanbul cover --root src --include-all-sources ./node_modules/.bin/_mocha -- -r ./tests/setup/before.js -R spec 'tests/**/*.test.js'",
+    "standards": "grunt standards"
   },
   "engines": {
     "node": ">= 4",
@@ -33,14 +34,15 @@
   "homepage": "https://github.com/silvermine/undertemplate#readme",
   "devDependencies": {
     "@silvermine/chai-strictly-equal": "1.0.0",
-    "@silvermine/eslint-config": "1.5.0",
+    "@silvermine/eslint-config": "3.0.1",
+    "@silvermine/standardization": "1.0.3",
     "chai": "4.1.2",
     "check-node-version": "3.2.0",
     "coveralls": "3.0.0",
-    "eslint": "4.19.1",
-    "grunt": "1.0.3",
+    "eslint": "6.8.0",
+    "grunt": "1.4.0",
     "grunt-cli": "1.2.0",
-    "grunt-eslint": "20.1.0",
+    "grunt-eslint": "22.0.0",
     "istanbul": "0.4.5",
     "mocha": "5.0.5",
     "mocha-lcov-reporter": "1.3.0",
