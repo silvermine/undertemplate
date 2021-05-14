@@ -1,6 +1,6 @@
 {
   "name": "@silvermine/undertemplate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Replacement for _.template (underscore or lodash) without unsafe evals.",
   "main": "src/index.js",
   "scripts": {
