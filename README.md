@@ -5,7 +5,6 @@
 [![Dependency Status](https://david-dm.org/silvermine/undertemplate.svg)](https://david-dm.org/silvermine/undertemplate)
 [![Dev Dependency Status](https://david-dm.org/silvermine/undertemplate/dev-status.svg)](https://david-dm.org/silvermine/undertemplate#info=devDependencies&view=table)
 
-
 ## What is it?
 
 A simple replacement for `_.template` from either [Underscore][utmpl] or [Lodash][ltmpl]
@@ -13,12 +12,11 @@ that removes the features that make those libraries incompatible with Content Se
 Policy (CSP). Specifically, this implementation supports only interpolation (escaped and
 unescaped) and does not support JS evaluation.
 
-
 ## How do I use it?
 
 Just like you would have used `_.template`:
 
-```
+```js
 var makeTemplate = require('@silvermine/undertemplate'),
     template = makeTemplate('Hello <%= name %>');
 
@@ -34,7 +32,6 @@ The following are **NOT** supported:
 
    * `<% … %>`: JS evaluation
    * `<% print('Hello ' + epithet); %>`: JS evaluation with the `print` function
-
 
 ## A Couple Notes
 
@@ -52,12 +49,10 @@ polyfills to support a wide array of browsers. To help reduce bloat, we do two t
       using UnderTemplate in a browserify-style environment since only the files from
       Lodash that are actually needed will be included in your bundle.
 
-
 ## How do I contribute?
 
 We genuinely appreciate external contributions. See [our extensive
 documentation][contributing] on how to contribute.
-
 
 ## License
 
