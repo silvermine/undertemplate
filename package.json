@@ -48,7 +48,7 @@
     "grunt-eslint": "22.0.0",
     "mocha": "8.4.0",
     "nyc": "15.1.0",
-    "rewire": "3.0.2",
+    "rewire": "6.0.0",
     "silvermine-serverless-utils": "git+https://github.com/silvermine/serverless-utils.git#910f1149af824fc8d0fa840878079c7d3df0f414",
     "sinon": "4.5.0"
   },
