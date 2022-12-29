@@ -88,7 +88,6 @@ typings/
 # dotenv environment variables file
 .env
 
-
 ### Vim ###
 # swap
 .sw[a-p]
@@ -101,5 +100,7 @@ Session.vim
 # auto-generated tag files
 tags
 
+# IDE configuration
+.idea
 
 # End of https://www.gitignore.io/api/vim,node,macos
