@@ -40,7 +40,7 @@
     "@silvermine/standardization": "2.0.0",
     "chai": "4.1.2",
     "coveralls": "3.0.0",
-    "eslint": "6.8.0",
+    "eslint": "8.16.0",
     "mocha": "8.4.0",
     "nyc": "15.1.0",
     "rewire": "3.0.2",
