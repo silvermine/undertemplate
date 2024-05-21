@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "commitlint": "commitlint --from a5cda1c",
-    "test": "check-node-version --npm 8.5.5 && nyc mocha -- -r ./tests/setup/before.js 'tests/**/*.test.js'",
+    "test": "nyc mocha -- -r ./tests/setup/before.js 'tests/**/*.test.js'",
+    "check-node-version": "check-node-version --npm 10.5.0",
     "eslint": "eslint '{,!(node_modules|dist)/**/}*.js'",
     "markdownlint": "markdownlint -c .markdownlint.json -i CHANGELOG.md '{,!(node_modules)/**/}*.md'",
     "standards": "npm run markdownlint && npm run eslint",
@@ -40,7 +41,7 @@
     "@silvermine/standardization": "2.0.0",
     "chai": "4.1.2",
     "coveralls": "3.0.0",
-    "eslint": "6.8.0",
+    "eslint": "8.16.0",
     "mocha": "8.4.0",
     "nyc": "15.1.0",
     "rewire": "3.0.2",
