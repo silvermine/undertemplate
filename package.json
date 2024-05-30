@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/silvermine/undertemplate#readme",
   "devDependencies": {
-    "@silvermine/chai-strictly-equal": "1.0.0",
+    "@silvermine/chai-strictly-equal": "1.1.1",
     "@silvermine/eslint-config": "3.1.0-beta.1",
     "@silvermine/standardization": "2.0.0",
     "chai": "4.1.2",
